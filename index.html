@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Webseite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 18px;
+        }
+        .image-container {
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            display: inline-block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <h1>Willkommen auf meiner Webseite!</h1>
     <p>Dies ist ein Bild, das auf meiner Webseite angezeigt wird:</p>
-    <img src="bild.png" alt="Ein schönes Bild" width="500">
+    <div class="image-container">
+        <img src="bild.png" alt="Ein schönes Bild">
+    </div>
 </body>
 </html>
