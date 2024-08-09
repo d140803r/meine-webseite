@@ -31,10 +31,11 @@
             border-radius: 15px;
             background-color: #2c2c2c;
             width: fit-content;
+            max-width: 50%; /* Bildgröße auf 50% der Containerbreite beschränken */
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
         }
         img {
-            max-width: 100%;
+            width: 100%; /* Bild auf die Containergröße skalieren */
             height: auto;
             border-radius: 10px;
             transition: transform 0.3s ease;
@@ -50,5 +51,3 @@
     <div class="image-container">
         <img src="bild.png" alt="Luxuriöses Bild">
     </div>
-</body>
-</html>
