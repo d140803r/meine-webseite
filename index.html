@@ -23,7 +23,7 @@
             overflow-x: scroll;
             padding: 20px;
             scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch; /* Sorgt für ein flüssiges Scrollen auf mobilen Geräten */
+            -webkit-overflow-scrolling: touch;
         }
         .gallery-container::-webkit-scrollbar {
             height: 10px;
@@ -42,9 +42,10 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
         }
         .gallery-item img {
-            width: 300px; /* Größe des Bildes anpassen */
+            width: 300px;
             height: auto;
             border-radius: 5px;
+            pointer-events: none; /* Verhindert, dass das Bild das Scrollen blockiert */
         }
     </style>
 </head>
@@ -74,9 +75,6 @@
         </div>
         <div class="gallery-item">
             <img src="bild.png" alt="Bild 2">
-        </div>
-        <div class="gallery-item">
-            <img src="bild.png" alt="Bild 3">
         </div>
         <div class="gallery-item">
             <img src="bild.png" alt="Bild 3">
