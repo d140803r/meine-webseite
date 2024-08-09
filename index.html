@@ -3,51 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Luxus-Webseite</title>
+    <title>Meine Luxus-Bildgalerie</title>
     <style>
         body {
             font-family: 'Georgia', serif;
             background-color: #1c1c1c;
             color: #f1f1f1;
             margin: 0;
-            padding: 40px;
+            padding: 20px;
             text-align: center;
-            background-image: linear-gradient(to bottom, #333, #1c1c1c);
         }
         h1 {
             color: #d4af37;
-            font-size: 3em;
+            font-size: 2.5em;
             margin-bottom: 20px;
         }
-        p {
-            color: #c0c0c0;
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-        .image-container {
-            margin: 0 auto;
+        .gallery-container {
+            display: flex;
+            overflow-x: auto;
             padding: 20px;
+            scroll-snap-type: x mandatory;
+        }
+        .gallery-container::-webkit-scrollbar {
+            height: 10px;
+        }
+        .gallery-container::-webkit-scrollbar-thumb {
+            background-color: #d4af37;
+            border-radius: 10px;
+        }
+        .gallery-item {
+            flex: none;
+            margin-right: 20px;
             border: 5px solid #d4af37;
-            border-radius: 15px;
+            border-radius: 10px;
+            scroll-snap-align: start;
             background-color: #2c2c2c;
-            width: fit-content;
-            max-width: 50%; /* Bildgröße auf 50% der Containerbreite beschränken */
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
         }
-        img {
-            width: 100%; /* Bild auf die Containergröße skalieren */
+        .gallery-item img {
+            width: 300px; /* Größe des Bildes anpassen */
             height: auto;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-        img:hover {
-            transform: scale(1.05);
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Willkommen auf meiner Luxus-Webseite!</h1>
-    <p>Erleben Sie den Glanz und die Eleganz in jedem Detail.</p>
-    <div class="image-container">
-        <img src="bild.png" alt="Luxuriöses Bild">
+    <h1>Willkommen in meiner Luxus-Bildgalerie!</h1>
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="bild1.png" alt="Bild 1">
+        </div>
+        <div class="gallery-item">
+            <img src="bild2.png" alt="Bild 2">
+        </div>
+        <div class="gallery-item">
+            <img src="bild3.png" alt="Bild 3">
+        </div>
+        <!-- Füge weitere Bilder nach Bedarf hinzu -->
     </div>
+</body>
+</html>
