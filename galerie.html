@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxus-Auto-Galerie</title>
+    <title>Galerie - Luxus-Auto-Galerie</title>
     <style>
         body {
-            font-family: 'Georgia', serif;
-            background-color: #1c1c1c;
-            color: #f1f1f1;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e5e5e5;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             text-align: center;
         }
-        h1 {
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
             color: #d4af37;
             font-size: 2.5em;
-            margin-bottom: 40px;
+            margin: 0;
+        }
+        .content {
+            padding: 50px 20px;
         }
         h2 {
-            color: #e5e5e5;
+            color: #d4af37;
             font-size: 2em;
             margin-top: 40px;
             margin-bottom: 20px;
@@ -34,105 +42,111 @@
             margin: 10px;
             border: 5px solid #d4af37;
             border-radius: 10px;
-            background-color: #2c2c2c;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            background-color: #1f1f1f;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
         }
         .gallery-item img {
-            width: 300px;
+            width: 100%;
             height: auto;
-            border-radius: 5px;
+            display: block;
         }
-        a {
+        .btn {
             display: inline-block;
             margin-top: 30px;
-            padding: 10px 20px;
+            padding: 15px 30px;
             font-size: 1.2em;
-            color: #1c1c1c;
+            color: #fff;
             background-color: #d4af37;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-        a:hover {
+        .btn:hover {
             background-color: #b08a28;
+        }
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            color: #888;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Luxus-Auto-Galerie</h1>
+    <header>
+        <h1>Luxus-Auto-Galerie</h1>
+    </header>
+    <div class="content">
+        <h2>Porsche</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="porsche1.png" alt="Porsche 1">
+            </div>
+            <div class="gallery-item">
+                <img src="porsche2.png" alt="Porsche 2">
+            </div>
+            <div class="gallery-item">
+                <img src="porsche3.png" alt="Porsche 3">
+            </div>
+        </div>
 
-    <!-- Porsche Kategorie -->
-    <h2>Porsche</h2>
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <img src="porsche1.png" alt="Porsche 1">
+        <h2>Koenigsegg</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="koenigsegg1.png" alt="Koenigsegg 1">
+            </div>
+            <div class="gallery-item">
+                <img src="koenigsegg2.png" alt="Koenigsegg 2">
+            </div>
+            <div class="gallery-item">
+                <img src="koenigsegg3.png" alt="Koenigsegg 3">
+            </div>
         </div>
-        <div class="gallery-item">
-            <img src="porsche2.png" alt="Porsche 2">
+
+        <h2>Lamborghini</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="lamborghini1.png" alt="Lamborghini 1">
+            </div>
+            <div class="gallery-item">
+                <img src="lamborghini2.png" alt="Lamborghini 2">
+            </div>
+            <div class="gallery-item">
+                <img src="lamborghini3.png" alt="Lamborghini 3">
+            </div>
         </div>
-        <div class="gallery-item">
-            <img src="porsche3.png" alt="Porsche 3">
+
+        <h2>Ferrari</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="ferrari1.png" alt="Ferrari 1">
+            </div>
+            <div class="gallery-item">
+                <img src="ferrari2.png" alt="Ferrari 2">
+            </div>
+            <div class="gallery-item">
+                <img src="ferrari3.png" alt="Ferrari 3">
+            </div>
         </div>
+        
+        <h2>Bugatti</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="bugatti1.png" alt="Bugatti 1">
+            </div>
+            <div class="gallery-item">
+                <img src="bugatti2.png" alt="Bugatti 2">
+            </div>
+            <div class="gallery-item">
+                <img src="bugatti3.png" alt="Bugatti 3">
+            </div>
+        </div>
+
+        <a href="index.html" class="btn">Zurück zur Startseite</a>
     </div>
-
-    <!-- Koenigsegg Kategorie -->
-    <h2>Koenigsegg</h2>
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <img src="koenigsegg1.png" alt="Koenigsegg 1">
-        </div>
-        <div class="gallery-item">
-            <img src="koenigsegg2.png" alt="Koenigsegg 2">
-        </div>
-        <div class="gallery-item">
-            <img src="koenigsegg3.png" alt="Koenigsegg 3">
-        </div>
-    </div>
-
-    <!-- Lamborghini Kategorie -->
-    <h2>Lamborghini</h2>
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <img src="lamborghini1.png" alt="Lamborghini 1">
-        </div>
-        <div class="gallery-item">
-            <img src="lamborghini2.png" alt="Lamborghini 2">
-        </div>
-        <div class="gallery-item">
-            <img src="lamborghini3.png" alt="Lamborghini 3">
-        </div>
-    </div>
-
-    <!-- Ferrari Kategorie -->
-    <h2>Ferrari</h2>
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <img src="ferrari1.png" alt="Ferrari 1">
-        </div>
-        <div class="gallery-item">
-            <img src="ferrari2.png" alt="Ferrari 2">
-        </div>
-        <div class="gallery-item">
-            <img src="ferrari3.png" alt="Ferrari 3">
-        </div>
-    </div>
-    
-    <!-- Bugatti Kategorie -->
-    <h2>Bugatti</h2>
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <img src="bugatti1.png" alt="Bugatti 1">
-        </div>
-        <div class="gallery-item">
-            <img src="bugatti2.png" alt="Bugatti 2">
-        </div>
-        <div class="gallery-item">
-            <img src="bugatti3.png" alt="Bugatti 3">
-        </div>
-    </div>
-
-    <!-- Zurück zur Startseite -->
-    <a href="index.html">Zurück zur Startseite</a>
-
+    <footer>
+        © 2024 Luxus-Auto-Galerie. Alle Rechte vorbehalten.
+    </footer>
 </body>
 </html>
