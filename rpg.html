@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini RPG Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #222;
+      color: #eee;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #d4af37;
+    }
+    .stats, .inventory, .quests {
+      margin: 20px auto;
+      padding: 20px;
+      background: #333;
+      border-radius: 8px;
+      max-width: 400px;
+      text-align: left;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background: #d4af37;
+      color: #222;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #b08a28;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mini RPG Demo</h1>
+  <div class="stats">
+    <strong>Level:</strong> <span id="level">1</span><br />
+    <strong>XP:</strong> <span id="xp">0</span>
+  </div>
+  <div class="inventory">
+    <strong>Inventar:</strong>
+    <ul id="inventory"></ul>
+    <button id="addItemBtn">Gegenstand hinzufügen</button>
+  </div>
+  <div class="quests">
+    <strong>Quests:</strong>
+    <ul id="quests"></ul>
+    <button id="addQuestBtn">Quest starten</button>
+    <button id="finishQuestBtn">Quest abschließen</button>
+  </div>
+  <button id="gainXpBtn">XP verdienen</button>
+  <script src="rpg.js"></script>
+</body>
+</html>
